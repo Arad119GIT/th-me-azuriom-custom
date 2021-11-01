@@ -1,2 +1,2 @@
-# th-me-azuriom-custom
+# thème-azuriom-custom
 Thème azuriom customisé pour votre serveur !
