@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+	font-family: 'Montserrat' sans-serif;
+    color: #fff;
+    background: url(https://cdn.discordapp.com/attachments/536626749665050624/730835693580058724/background_others-min.png);
+}
+
+.modal-content {
+    color: #212529;
+}
+
+.content .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#app {
+    flex-shrink: 0;
+    padding-bottom: 15px;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.link-unstyled:hover,
+.link-unstyled:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-select {
+    background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23ccc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+
+.form-control,
+.custom-select,
+.input-group .input-group-text,
+.input-group .btn {
+    border-radius: 0;
+}
+
+.form-control,
+.custom-select,
+.table {
+    background-clip: inherit;
+    color: #fff;
+    background-color: #444;
+    border-color: #000;
+}
+
+.table {
+    border: 1px #000 solid;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    color: #fff;
+    background: #444;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border: none;
+    border-radius: 0;
+}
+
+.form-control:focus,
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.input-group-text {
+    color: #999;
+    background: #555;
+    border-color: #000 !important;
+}
+
+hr {
+    border-top: 1px solid rgba(200, 200, 200, 0.2);
+}
+
+.btn-primary {
+    box-shadow: none !important;
+}
+
+/*
+ * Navbar
+ */
+.navbar {
+    font-size: 1.05rem;
+        font-weight: bold;
+    text-transform: uppercase;
+    background: #222;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+}
+
+.navbar .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar-stop {
+    display: none;
+}
+
+.sub-navbar #notificationsDropdown {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-navbar #notificationsDropdown::after {
+    content: none;
+}
+
+.copy-address {
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    margin-bottom: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 991px) {
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        width: 265px;
+        transform: translateX(-50%);
+        z-index: 50;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-collapse .navbar-nav {
+        justify-content: space-between;
+        width: calc((100% - 165px) / 2);
+    }
+
+    .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.sub-navbar .btn-rounded {
+    transition-duration: 0.3s;
+    border-bottom: green solid 3px;
+    background-color:#4da647;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.breadcrumb {
+    background: #b1b1b1;
+}
+
+.card,
+.list-group-item {
+    border-color: #888;
+    color: #fff;
+    background: #4c4c4c;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/*
+ * Home
+ */
+.home-background {
+    position: relative;
+    height: 600px;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);*/
+}
+
+.background-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.home-background .media {
+    padding: 0px;
+    background: rgba(25, 25, 25, 0.8);
+    border-radius: 0px;
+}
+
+.home-background .welcome-title {
+    font-family: 'Changa One', sans-serif;
+    color: #fff;
+}
+
+@media (min-width: 991px) {
+    .welcome-title {
+        font-size: 4.5em;
+    }
+}
+
+.post-preview {
+    position: relative;
+    height: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.75);
+}
+
+.post-preview .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(25, 25, 25, 0.7);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.post-preview:hover .title {
+    background: rgba(25, 25, 25, 0.9);
+}
+
+.post-preview .preview-content {
+    height: 100%;
+    background: #232323;
+}
+
+.post-preview .preview-content:hover {
+    background: #181818;
+}
+
+.post-preview a {
+    color: #fff;
+}
+
+/* EasyMDE */
+.editor-toolbar {
+    background: #333!important;
+}
+
+.editor-toolbar .fa {
+    color: #aaa;
+}
+
+.editor-toolbar.fullscreen::before,
+.editor-toolbar.fullscreen::after {
+    display: none;
+}
+
+.editor-toolbar .separator {
+    border-right: 1px solid #ccc;
+}
+
+.editor-toolbar button.active,
+.editor-toolbar button:hover {
+    background: #444!important;
+}
+
+.cm-s-easymde, .editor-preview {
+    color: #fff!important;
+    background: #444!important;
+}
+
+.cm-s-easymde .CodeMirror-cursor {
+    border-left: 1px solid #fff!important;
+}
+
+/*
+ * Footer
+ */
+footer {
+    padding: 50px 0;
+    margin-top: -40px;
+    background: #222;
+}
+
+footer .social a,
+footer .links a {
+    color: #fff;
+}
+
+footer .social a,
+footer .links a {
+    text-decoration: none;
+}
+
+footer h4 {
+    text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+{
+    "id": "michel",
+    "name": "Michel",
+    "description": "A dark theme with configurable color.",
+    "version": "1.0.0",
+    "url": "https://azuriom.com",
+    "authors": [
+        "Azuriom"
+    ]
+}

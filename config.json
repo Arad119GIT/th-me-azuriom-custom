@@ -1,0 +1,23 @@
+{
+    "color": "green",
+    "title": null,
+    "use_play_button": "on",
+    "play_button_link": "/play",
+    "footer_description": "Michel est un serveur PVP/Faction sous launcher qui apportera un nouveau type d'aventure tant aux joueurs farmeurs qu'aux chasseurs",
+    "footer_links": [
+        {
+            "name": "Mentions L\u00e9gales",
+            "value": "https://michel.fr/mentions-legales"
+        },
+        {
+            "name": "CGU/CGV",
+            "value": "https://michel.fr/cgu-cgv"
+        }
+    ],
+    "footer_social_twitter": "https://twitter.com/Michel",
+    "footer_social_discord": "https://discord.michel.fr/",
+    "footer_social_steam": null,
+    "footer_social_youtube": null,
+    "footer_social_teamspeak": null,
+    "footer_social_instagram": null
+}
